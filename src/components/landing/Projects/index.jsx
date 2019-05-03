@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import { Container, Card } from 'Common'
 import starIcon from 'Static/icons/star.svg'
@@ -9,12 +9,6 @@ export const Projects = () => (
 	<StaticQuery
 		query={graphql`
 			{
-				github {
-					repositoryOwner(login: "smakosh") {
-						repositories(
-							first: 8
-							orderBy: { field: STARGAZERS, direction: DESC }
-						) {
 							edges {
 								node {
 									id
@@ -72,4 +66,4 @@ export const Projects = () => (
 			</Wrapper>
 		)}
 	/>
-)
+)*/

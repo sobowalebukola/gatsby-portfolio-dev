@@ -6,6 +6,7 @@
   "author": "Smakosh <ismai23l@hotmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
+    "core-js": "2",
     "dotenv": "^6.2.0",
     "formik": "^1.4.1",
     "gatsby": "^2.0.53",
@@ -56,9 +57,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "git+https://github.com/gatsbyjs/gatsby-starter-default.git"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+  },
+  "homepage": "https://github.com/gatsbyjs/gatsby-starter-default#readme",
+  "main": ".eslintrc.js"
 }
