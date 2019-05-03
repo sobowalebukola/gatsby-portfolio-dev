@@ -59,6 +59,16 @@ const ContactForm = ({
 			/>
 			<ErrorMessage component={Error} name="message" />
 		</InputField>
+		{values.name && values.email && values.message && (
+			<InputField>
+				<FastField
+					component={Recaptcha}
+					sitekey={recaptcha_key}
+					name="recaptcha"
+					onChange={value => setFieldValue('recaptcha', value)}
+				/>
+				<ErrorMessage component={Error} name="recaptcha" />
+			</InputField>
 		)}
 		{values.success && (
 			<InputField>
@@ -117,6 +127,7 @@ const enhance = compose(
 						name,
 						email,
 						message,
+						'g-recaptcha-response': recaptcha,
 					}),
 				})
 				await setSubmitting(false)
