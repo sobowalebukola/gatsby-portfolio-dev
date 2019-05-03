@@ -4,7 +4,6 @@ import { Form, withFormik, FastField, ErrorMessage } from 'formik'
 import Recaptcha from 'react-google-recaptcha'
 import * as Yup from 'yup'
 import { Button, Input } from 'Common'
-import { recaptcha_key } from 'Data'
 import { Error, Center, InputField } from './styles'
 
 const ContactForm = ({
@@ -60,16 +59,6 @@ const ContactForm = ({
 			/>
 			<ErrorMessage component={Error} name="message" />
 		</InputField>
-		{values.name && values.email && values.message && (
-			<InputField>
-				<FastField
-					component={Recaptcha}
-					sitekey={recaptcha_key}
-					name="recaptcha"
-					onChange={value => setFieldValue('recaptcha', value)}
-				/>
-				<ErrorMessage component={Error} name="recaptcha" />
-			</InputField>
 		)}
 		{values.success && (
 			<InputField>
