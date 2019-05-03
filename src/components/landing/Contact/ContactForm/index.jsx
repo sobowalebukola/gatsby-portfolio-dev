@@ -117,7 +117,6 @@ const enhance = compose(
 						name,
 						email,
 						message,
-						'g-recaptcha-response': recaptcha,
 					}),
 				})
 				await setSubmitting(false)
